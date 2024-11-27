@@ -1,3 +1,8 @@
+
+flask==2.3.0
+flask-wtf==1.1.1
+gunicorn==20.1.0
+
 def check_eligibility(data):
     country_rules = {
         'australia': lambda d: d['education'] in ['bachelor', 'master', 'phd'] and d['experience'] >= 2,

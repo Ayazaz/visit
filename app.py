@@ -1,3 +1,5 @@
+
+
 from flask import Flask, render_template, request
 from forms import VisaForm
 from visa_requirements import check_eligibility
