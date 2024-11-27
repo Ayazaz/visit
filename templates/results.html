@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="card shadow p-4">
+    <h2>Eligibility Results</h2>
+    <p><strong>Name:</strong> {{ user.name }}</p>
+    <p><strong>Selected Country:</strong> {{ user.country|capitalize }}</p>
+    <p><strong>Result:</strong>
+        <span class="badge {{ 'bg-success' if result == 'Eligible' else 'bg-danger' }}">
+            {{ result }}
+        </span>
+    </p>
+    <a href="/" class="btn btn-secondary mt-3">Check Again</a>
+</div>
+{% endblock %}
